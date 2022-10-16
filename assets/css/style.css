@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -9,4 +11,122 @@ html {
 
 body {
   background-color: #efefef;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.container {
+  max-width: 1110px;
+
+  margin-inline: auto;
+}
+
+.navbar-secondary__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+  padding: 1em 0;
+
+  list-style-type: none;
+
+  gap: 10px 30px;
+}
+.navbar-secondary__list__link {
+  color: #333333;
+
+  line-height: 16px;
+}
+
+.navbar-info {
+  background-color: #ffffff;
+}
+
+.container--logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  padding: 20px 0;
+
+  gap: 30px;
+}
+
+.logo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 20px;
+}
+.logo__image {
+  width: 80px;
+  height: 80px;
+}
+.logo__title {
+  letter-spacing: 0.1em;
+
+  color: #f13c6e;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 40px;
+}
+.feedback__telephone {
+  color: #000000;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+.feedback__button {
+  width: 170px;
+  min-height: 40px;
+
+  color: #000000;
+  border: 2px solid #f13c6e;
+  border-radius: 40px;
+  background: #ffffff;
+
+  line-height: 16px;
 }

@@ -1,0 +1,105 @@
+@import "variables";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: $primaru-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+.navbar-secondary__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 1em 0;
+
+    &__link {
+        line-height: 16px;
+        color: $primary-txt-color;
+    }
+}
+
+.navbar-info {
+    background-color: $secondaru-color;
+}
+
+.container--logo {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+        color: $hero-color;
+    }
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__telephone {
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    &__button {
+        width: 170px;
+        min-height: 40px;
+        line-height: 16px;
+
+        color: #000000;
+        background: $secondaru-color;
+
+        border: 2px solid $hero-color;
+        border-radius: 40px;
+    }
+}
