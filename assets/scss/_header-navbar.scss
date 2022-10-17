@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: $primaru-color;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1150px;
+    padding: 0 20px;
+
+    margin-inline: auto;
+}
+
+.navbar-secondary__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    padding: 1em 0;
+    list-style-type: none;
+    gap: 10px 30px;
+
+    &__link {
+        color: $primary-txt-color;
+        line-height: 16px;
+    }
+}
+
+.navbar-info {
+    background-color: $secondaru-color;
+    border-bottom: 1px solid $primaru-color;
+}
+
+.container--logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.logo {
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__title {
+        letter-spacing: 0.1em;
+        color: $hero-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+    }
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__telephone {
+        color: #000000;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__button {
+        width: 170px;
+        min-height: 40px;
+        color: #000000;
+        border: 2px solid $hero-color;
+        border-radius: 40px;
+        background: $secondaru-color;
+        line-height: 16px;
+    }
+}
+
+.navbar-primary {
+    background-color: $secondaru-color;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 40px;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+}
