@@ -1,2 +1,45 @@
 @import "variables";
 @import "header-navbar";
+
+
+
+.hero {
+    background-color: $hero-color;
+    height: 604px;
+    background-image: url(../../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size:contain;
+    ba
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__title {
+    }
+
+    &__description {}
+
+    &__button {
+
+    }
+    &__link {
+        padding: 0.5em;
+        width: 170px;
+        min-height: 40px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: $secondaru-color;
+        background: $hero-color;
+        border: 2px solid $secondaru-color;
+        border-radius: 40px;
+    }
+
+}

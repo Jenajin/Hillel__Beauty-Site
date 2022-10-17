@@ -163,3 +163,48 @@ a {
   font-size: 16px;
   line-height: 19px;
 }
+
+.hero {
+  height: 604px;
+
+  background-color: #f13c6e;
+  background-image: url(../../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: contain;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  gap: 40px;
+}
+.hero-container__link {
+  display: block;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 170px;
+  min-height: 40px;
+  padding: 0.5em;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  background: #f13c6e;
+
+  line-height: 16px;
+}
