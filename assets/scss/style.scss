@@ -1,45 +1,46 @@
 @import "variables";
 @import "header-navbar";
+@import "hero";
 
 
 
-.hero {
-    background-color: $hero-color;
-    height: 604px;
-    background-image: url(../../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: 70%;
-    background-size:contain;
-    ba
+@import "media";
+
+
+
+
+.offer {
+    &__title {
+        margin: 0;
+    }
+
+    &__content {}
+
+
 }
 
-.hero-container {
+.goods {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    max-width: 255px;
+    min-height: 363px;
 
-    &__title {
+
+    &__title {}
+
+    &__picture {
+        order: -1;
+        width: 125px;
+        height: 166px;
     }
 
-    &__description {}
+    &__image {}
 
-    &__button {
+    &__price {}
 
-    }
-    &__link {
-        padding: 0.5em;
-        width: 170px;
-        min-height: 40px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 16px;
-        letter-spacing: 0.05em;
-        color: $secondaru-color;
-        background: $hero-color;
-        border: 2px solid $secondaru-color;
-        border-radius: 40px;
-    }
+    &__action {}
+
+    &__button {}
 
 }
