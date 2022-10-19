@@ -1,6 +1,8 @@
 @import "variables";
+@import "_commons";
 @import "header-navbar";
 @import "hero";
+@import "main-offer";
 
 
 
@@ -8,39 +10,31 @@
 
 
 
-
-.offer {
-    &__title {
-        margin: 0;
-    }
-
-    &__content {}
-
-
-}
-
-.goods {
+.cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 255px;
-    min-height: 363px;
-
-
-    &__title {}
-
-    &__picture {
-        order: -1;
-        width: 125px;
-        height: 166px;
-    }
-
-    &__image {}
-
-    &__price {}
-
-    &__action {}
-
-    &__button {}
-
+    gap: 30px;
+    flex: 1;
+}
+.bonus {
+    background-color: $hero-color;
+  
+}
+.cards__content {
+}
+.cards__title {
+}
+.cards__description {
+}
+.bonus__form {
+}
+.cards__input {
+}
+.cards__picture {
+}
+.cards__image {
+}
+.shop {
+    background-color: $hero-color;
+}
+.cards__form {
 }
