@@ -3,6 +3,7 @@
 @import "header-navbar";
 @import "hero";
 @import "main-offer";
+@import "cards";
 
 
 
@@ -10,31 +11,7 @@
 
 
 
-.cards {
-    display: flex;
-    gap: 30px;
-    flex: 1;
-}
-.bonus {
-    background-color: $hero-color;
-  
-}
-.cards__content {
-}
-.cards__title {
-}
-.cards__description {
-}
-.bonus__form {
-}
-.cards__input {
-}
-.cards__picture {
-}
-.cards__image {
-}
-.shop {
-    background-color: $hero-color;
-}
-.cards__form {
-}
+
+
+
+
