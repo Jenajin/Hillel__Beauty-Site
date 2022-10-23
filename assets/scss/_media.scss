@@ -1,8 +1,33 @@
 @media (max-width: 992px) {
   .hero {
-    background-position: 50% 50%;
-    background-size: cover;
+    padding: 50px;
+    min-height: auto;
+  }
+  .container--logo {
+    justify-content: center;
+  }
 
+}
+
+@media (max-width: 768px) {
+  .offer__content {
+    grid-auto-flow: initial;
+    grid-auto-columns: initial;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
     filter: brightness(0.9);
+    padding: 10px;
+  }
+  .feedback {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .offer__content {
+    grid-template-columns: 1fr;
   }
 }

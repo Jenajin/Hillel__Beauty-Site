@@ -11,7 +11,32 @@
 
 
 
+.impuls {
 
+}
+
+.impuls-content {
+    width: 100%;
+    min-height: 357px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 35px 130px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: $secondaru-color;
+}
+.impuls-wrapper {
+    display: flex;
+}
+.impuls-link {
+    margin: auto;
+}
+.impuls-link__image {
+    max-width: 149px;
+    max-height: 49px;
+}
 
 
 

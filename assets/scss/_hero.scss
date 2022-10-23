@@ -2,7 +2,6 @@
 .hero {
   min-height: 604px;
   padding: 192px 0;
-
   background-color: $hero-color;
   background-image: url(../../images/hero.jpg);
   background-repeat: no-repeat;
@@ -13,11 +12,8 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-
   max-width: 308px;
-
   color: $secondaru-color;
-
   gap: 40px;
 
   &__title {
