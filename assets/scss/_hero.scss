@@ -8,6 +8,16 @@
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: contain;
+
+  @media (max-width: 992px) {
+    padding: 50px;
+    min-height: auto;
+  }
+
+  @media (max-width: 576px) {
+    filter: brightness(0.9);
+    padding: 10px;
+  }
 }
 
 .hero-content {
@@ -19,7 +29,6 @@
 
   &__title {
     margin: 0;
-
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
