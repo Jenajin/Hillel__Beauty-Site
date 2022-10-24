@@ -1,0 +1,35 @@
+@use "presets" as *;
+
+.impuls {
+
+    &-content {
+        min-height: 357px;
+        display: grid;
+        background-color: $secondaru-color;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @media (max-width: calc(768px - 0.2px) ) and (min-width: 576px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-auto-rows: minmax(100px, auto);
+        }
+    }
+
+    &-wrapper {
+        border: 1px solid $primaru-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-link__image {
+        width: 149px;
+        height: 49px;
+    }
+}

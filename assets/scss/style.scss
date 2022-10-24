@@ -1,42 +1,14 @@
-@import "variables";
-@import "_commons";
-@import "header-navbar";
-@import "hero";
-@import "main-offer";
-@import "cards";
+@use "presets" as *;
+@use "commons";
+@use "header-navbar";
+@use "hero";
+@use "main-offer";
+@use "cards";
+@use "impuls";
 
 
 
-@import "media";
-
-
-
-.impuls {
-
-}
-
-.impuls-content {
-    width: 100%;
-    min-height: 357px;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    gap: 35px 130px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: $secondaru-color;
-}
-.impuls-wrapper {
-    display: flex;
-}
-.impuls-link {
-    margin: auto;
-}
-.impuls-link__image {
-    max-width: 149px;
-    max-height: 49px;
-}
+@use "media";
 
 
 

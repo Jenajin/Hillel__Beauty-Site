@@ -1,3 +1,4 @@
+@use "presets" as *;
 
 .offer {
   padding: 80px 0;
@@ -16,8 +17,15 @@
     margin: 38px 0 20px;
     gap: 30px;
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(0, 1fr);
+
+    @media (min-width: 768px) {
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+    }
+
+    @media (max-width: calc(768px - 0.2px)) and (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 

@@ -9,12 +9,12 @@
 
 }
 
+@media (min-width: 768px) {
+
+}
+
 @media (max-width: 768px) {
-  .offer__content {
-    grid-auto-flow: initial;
-    grid-auto-columns: initial;
-    grid-template-columns: repeat(2, 1fr);
-  }
+
 }
 
 @media (max-width: 576px) {
@@ -25,9 +25,5 @@
   .feedback {
     flex-wrap: wrap;
     flex-direction: column;
-  }
-
-  .offer__content {
-    grid-template-columns: 1fr;
   }
 }
