@@ -1,20 +1,32 @@
 @use "presets" as *;
 
 .hero {
-  min-height: 604px;
-  padding: 192px 0;
+
   background-color: $hero-color;
   background-image: url(../../images/hero.jpg);
   background-repeat: no-repeat;
-  background-position: 75% 50%;
   background-size: contain;
 
-  @media (max-width: 992px) {
+  @media (min-width: 1680px) {
+    background-position: 50% 50%;
+  }
+
+  @media (max-width: 1680px) {
+    background-position: 80% 50%;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 604px;
+    padding-top: 192px;
+    padding-bottom: 192px;
+  }
+
+  @media (max-width: calc(992px - 0.2px)) and (min-width: 576px) {
     padding: 50px;
     min-height: auto;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: calc(576px - 0.2px)) {
     filter: brightness(0.9);
     padding: 10px;
   }
